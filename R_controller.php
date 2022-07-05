@@ -12,12 +12,7 @@ class R_controller extends CI_Controller
     {
         get_method();
         $data['title'] = "App Key";
-        $data['description'] = "CodeIgniter 3 App Key Generator";
-        $data["active_page"] = "";
-
-        $this->load->view('@frontend/__components/header.html', $data);
-        $this->load->view('@frontend/app_key/app_key.html', $data);
-        $this->load->view('@frontend/__components/footer.html');
+        $this->load->view('R_view', $data);
 
     }
 
